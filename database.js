@@ -1,6 +1,6 @@
 const sqlite3 = require('sqlite3').verbose();
 
-let conn = new sqlite3.Database('./chinook.db', (err) => {
+let db = new sqlite3.Database('./chinook.db', (err) => {
     if (err) {
     
       console.error(err.message)
@@ -13,4 +13,4 @@ let conn = new sqlite3.Database('./chinook.db', (err) => {
 });
 
 
-module.exports = conn
+module.exports = db

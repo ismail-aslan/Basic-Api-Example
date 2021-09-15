@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <title>UserList Page</title>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html;charset=iso-8859-9">
+    <meta http-equiv="Content-language" content="tr">
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+        content=" width=device-width,initial-scale=1, viewport-fit=cover,maximum-scale=1.0, user-scalable=0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+
+    <!-- <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/aes.js"></script>
+    <script src="js/Extentions.js"></script>-->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+   
+    <style>
+        *{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1 class="pageHeader" style="margin: 20px auto;width: fit-content;">Basic Api Example</h1>
+    <h2>Employee List</h2>
+    <div class="container" id="MainDiv">
+        <table id="example" class="display" style="width:100%">
+            <thead>
+                <tr style="background-color: blanchedalmond;">
+                    <th>Employee Id</th>
+                    <th>Name</th>
+                    <th>Title</th>
+                    <th>City</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="tbodyEmployeeList">
+            </tbody>
+        </table>
+        <br><br><br>
+   <hr><hr><hr>
+   <br><br><br>
+
+
+   <h2>Album List</h2>
+        <table id="example2" class="display" style="width:50%;margin: auto;border: solid;">
+            <thead>
+                <tr>
+                    <th>Album Id</th>
+                    <th>Title</th>
+                    <th>Artist Id</th>
+                    
+                    
+                </tr>
+            </thead>
+            <tbody id="tbodyAlbumList">
+            </tbody>
+        </table>
+        
+    </div>
+   
+    <script src="userList.js"></script>
+</body>
+
+</html>
